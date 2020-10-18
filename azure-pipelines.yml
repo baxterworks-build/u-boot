@@ -175,8 +175,8 @@ jobs:
   - task: GithubRelease@0
     displayName: 'Create Github release with assets'
     inputs:
-      gitHubConnection: sigmaris_token
-      repositoryName: sigmaris/u-boot
+      gitHubConnection: baxterworks-build_token
+      repositoryName: baxterworks-build/u-boot
       action: 'create'
       target: '$(Build.SourceVersion)'
       tagSource: 'auto'
